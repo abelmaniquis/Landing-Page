@@ -7,31 +7,57 @@ html{
 *,*:before,*:after{
 	box-sizing: inherit;
 }
+
+body{
+	background-color: LightGray;
+}
+
+div{
+	border: 1x solid Chocolate;
+}
+
 .top-navigation{
-	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+	background-color:#FFF;
 	position: fixed;
 	width: 100%;
 	border-bottom:1px solid;
 	z-index: 9999;
 }
 
-.top-navigation > .content{
-	height: 4.375rem;
-}
-
 .content{
-	padding: 0 0.938rem;
+	padding: 0px 15px;
 	margin:0 auto;
 	min-width:37.5 rem;
 }
 
-body{
-	background-color: LightGray;
+.links{
+	float: right;
 }
-div{
-	border: 1x solid Chocolate;
+
+.links li{
+	display: inline;
 }
-img{
-	margin-left:267px;
+
+.top-navigation .logo{
 	margin-top:15px;
 }
+
+.introduction{
+	background-image: url('../images/first-background-copy.jpg');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938rem;
+}
+
+.introduction h1, .introduction h3{
+	color: #FFF;
+	text-align: center;
+	font-weight: 300;
+}
+
+/*li {
+	display: inline;
+}*/
+
