@@ -1,63 +1,70 @@
-/*http://thinkful-ed.github.io/karma-clone/*/
 
-/*Navigation Section*/
-html{
-	box-sizing: border-box;
-}
-*,*:before,*:after{
-	box-sizing: inherit;
-}
-
-body{
-	background-color: LightGray;
-}
-
-div{
-	border: 1x solid Chocolate;
-}
-
+/*Navigation*/
 .top-navigation{
-	font-family: 'Roboto', sans-serif;
-	background-color:#FFF;
-	position: fixed;
-	width: 100%;
-	border-bottom:1px solid;
-	z-index: 9999;
+    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
+    z-index: 9999;
 }
 
-.content{
-	padding: 0px 15px;
-	margin:0 auto;
-	min-width:37.5 rem;
+.top-navigation > .content{
+    padding-left: 268px;
+    padding-top: 14px;
+    height: 4.375rem;
 }
 
-.links{
-	float: right;
+.top-navigation > .logo{
+    height: 4.375rem;
 }
 
-.links li{
-	display: inline;
+.top-navigation .links{
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 1.7rem;
 }
 
-.top-navigation .logo{
-	margin-top:15px;
+.top-navigation .links li{
+    display: inline-block;
+    margin-left: 1.563rem;
 }
+
+.top-navigation .links li.active{
+    color: #4c5058;
+    font-weight: 500;
+}
+
+.top-navigation .links li:hover{
+    cursor: pointer;
+    color: #333333;
+}
+
+
+
+/*INTRODUCTION SECTION*/
 
 .introduction{
-	background-image: url('../images/first-background-copy.jpg');
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 45.938rem;
+    background-image: url('../images/first-background-copy.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
 }
 
 .introduction h1, .introduction h3{
-	color: #FFF;
-	text-align: center;
-	font-weight: 300;
+    color: #FFF;
+    text-align: center;
+    font-weight: 300;
 }
 
-/*li {
-	display: inline;
-}*/
+.introduction h1{
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
 
+.introduction h3{
+    margin-top:  1.25rem;
+    margin-size: 1.563rem;
+}
