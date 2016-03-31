@@ -26,21 +26,17 @@ div {
     width: 100%;
     border-bottom: 1px solid #DDD;
     z-index: 9999;
+    background-image: url('../images/karma-logo.svg'); /*Karma logo added as background image in CSS*/
+    background-position: 21.70%;
+    background-size: 26px 70px;
+    background-repeat: no-repeat;
 }
 
 .top-navigation > .content{
     width: 757.797px;
     margin: auto;
-    padding-bottom: 15px; /*15px*/
+    padding-bottom: 15px; 
     height: 4.375rem;
-}
-.top-navigation{
-    background-position: 21.70%;
-    background-size: 26px 70px;
-    background-image: url('../images/karma-logo.svg');
-    background-repeat: no-repeat;
-    
-
 }
 
 .top-navigation .links{
@@ -131,7 +127,7 @@ div {
     background-color: #fff;
     overflow: hidden;
     padding-bottom: 5rem;
-    padding-left: 17rem;
+    padding-left: 17rem; /*these are to push the images closer together, similar to the original site.*/
     padding-right:17rem;
 }
 
@@ -199,20 +195,22 @@ li{
 
 /*Footer*/
 
-.social{
+.footer{
     background-color:#fff;
     overflow:auto;
     padding-bottom:9.375rem;
     text-align: center;
 }
 
-.social hr{
+.footer hr{
     border: 0;
     border-top: 1px solid #eaebec;
     margin: 1.313rem 0;
 }
-
-.social .icons > li{
+.footer h5{
+    padding-left:43px; /*Aligning with bottom icons*/
+}
+.icons > li{
     border-radius: 1.25rem;
     width: 2.5rem; 
     height: 2.5rem;
@@ -220,21 +218,20 @@ li{
     margin: 1.26rem 5px;
     border: 1px solid #eaebec;
     padding: 0.625rem 0;
-    text-align: center;
 }
-.social .icons > li:hover{
+.footer .icons > li:hover{
     cursor: pointer;
 }
 
-.social .twitter{
+.footer .twitter{
     color: #55acee;
 }
 
-.social .instagram{
+.footer .instagram{
     color: #3f729b;
 }
 
-.social .copy{
+.footer .copy{
     font-size: 0.9rem;
     font-weight: 300;
     color: #838994;
