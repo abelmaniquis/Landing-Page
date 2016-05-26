@@ -1,55 +1,71 @@
 <!DOCTYPE html>
+<!--Doctype declaration. Instructs the browser which version of HTML to run-->
 <html lang="en">
+<!--Sets default language to English-->
+
 <head>
-<!--fontawesome footer-->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--The <head> element is a container for all the head elements, including the title-->
+	<!--fontawesome footer-->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<!--min means minify: condenses css to use less memory-->
 	<!--favicon-->
-<link rel="icon" type="image/png" href="favicon.ico" />
-<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+	<link rel="icon" type="image/png" href="favicon.ico" />
+	<!--rel specifies the relationship between the current document and the linked document-->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css'>
+	<!--href specifies the link's destination-->
 	<meta charset="UTF-8">
-
+	<!--The charset attribute specifies the character encoding for an html document-->
 	<title>Karma</title>
+	<!--The <title> tag defines a title in the browser toolbar,it provides a title for the page in the browser toolbar. It is required in all HTML documents-->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!--rel, href-->
 
-<link rel="stylesheet" href="css/normalize.css">
 
-<!--CSS Style-->
-<link rel="stylesheet" href="css/style.css">
+	<!--CSS Style-->
+	<link rel="stylesheet" href="css/style.css">
+	<!--rel, href-->
 </head>
-	<body>
+
+<body>
+	<!--<body> defines the document's body,the <body> element contains all the contents of an html document, such as a text, hyperlinks, images, tables, lists, etc-->
 
 	<!--Navigation-->
-		<nav class="top-navigation">
-			<div class="content">
-				<ul class = "links">
-					<li class = "active">Meet Karma</li>
-					<li>How it Works</li>
-					<li>Store</li>
-					<li>Blog</li>
-					<li>Help</li>
-					<li>Login</li>
-				</ul>
-			</div>
-		</nav>
-
-<!--Introduction Section-->
-	<section class = "introduction">
-	<div class = "content">
-		<h1>Introducing Karma</h1>
-		<h3>Bring WiFi with you, everywhere you go.</h3>
-<!--Buttons-->
-		<div class = "buttons">
-			<button>Learn More</button>
+	<nav>
+		<!--<nav> tag defines a set of navigation links-->
+		<div class="content">
+			<!--<ul> specifies an unordered list-->
+			<ul class="links">
+				<li class="active">Meet Karma</li>
+				<!--<li> gives individual list elements-->
+				<li>How it Works</li>
+				<!---->
+				<li>Store</li>
+				<li>Blog</li>
+				<li>Help</li>
+				<li>Login</li>
+			</ul>
 		</div>
-	</div>
+	</nav>
+
+	<!--Introduction Section-->
+	<section class="introduction">
+		<div class="content">
+			<h1>Introducing Karma</h1>
+			<h3>Bring WiFi with you, everywhere you go.</h3>
+			<!--Buttons-->
+			<div class="buttons">
+				<button>Learn More</button>
+			</div>
+		</div>
 	</section>
 
-<!--Three Case Images-->
-	<section class = "cases">
-		<div class ="content">
+	<!--Three Case Images-->
+	<section class="cases">
+		<div class="content">
 			<h2>
 				Everyone needs a little Karma.
 			</h2>
-			<ul class = "devices">
+			<ul class="devices">
 				<li>
 					<div class="caption">
 						<h3>
@@ -59,15 +75,15 @@
 				</li>
 				<li>
 					<div class="caption">
-				<h3>
+						<h3>
 				Boost your productivity
 				</h3>
-				</div>
+					</div>
 				</li>
 
 				<li>
 					<div class="caption">
-					<h3>Pay as You Go</h3>
+						<h3>Pay as You Go</h3>
 					</div>
 				</li>
 			</ul>
@@ -75,23 +91,25 @@
 	</section>
 
 	<!--Footer-->
-	<footer class ="footer"> <!--change to footer-->
+	<footer class="footer">
+		<!--change to footer-->
 		<div class="content">
 			<h5>Join us on</h5>
 			<ul class="icons">
 				<li>
-					<i class="fa fa-twitter"></i>
+					<i class="fa fa-twitter" id="twitter"></i>
 				</li>
 				<li>
-					<i class="fa fa-facebook"></i>
+					<i class="fa fa-facebook" id="facebook"></i>
 				</li>
 				<li>
-					<i class="fa fa-instagram"></i>
+					<i class="fa fa-instagram" id="instagram"></i>
 				</li>
 			</ul>
 		</div>
 	</footer>
-	</body>
+</body>
+
 </html>
 
 
@@ -102,4 +120,3 @@ Creates a list of 5 items
 https://packagecontrol.io/
 
 http://docs.emmet.io/abbreviations/syntax/!-->
-
