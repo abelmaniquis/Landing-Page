@@ -1,0 +1,268 @@
+/*Navigation*/
+
+html {
+    box-sizing: border-box;
+    /*Box sizing tells the browser which sizing properties to use*/
+}
+
+*,
+*:before,
+
+/*the * selector selects all elements*/
+
+*:after {
+    /*the :before selector inserts something before the content of all selected elements, likewise the :after selector inserts something after all selected elements*/
+    box-sizing: inherit;
+    /*the box-sizing property should inherit its property from its parent element, in this case, the html element*/
+}
+
+body {
+    background-color: LightGray;
+    /*sets background color to LightGray. */
+}
+
+div {
+    border:none;
+    /*creates a border around all of the margins*/
+}
+
+
+/*Navigation bar*/
+
+nav {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    position: fixed;
+    /*makes bar stay at the top of browser*/
+    width: 100%;
+    /*bar stretches across page*/
+    border-bottom: 1px solid #ddd;
+    z-index: 9999; /*stack order: displays over any element with z-element < 99999*/
+    background-image: url('../images/karma-logo.svg');
+    /*Karma logo added as background image in CSS .. looks in the above folder*/
+    background-position: 21.70%;
+    /**/
+    background-size: 26px 70px;
+    background-repeat: no-repeat;
+}
+
+nav > .content {
+    width: 757.797px;
+    margin: auto;
+    padding-bottom: 15px;
+    height: 4.375rem;
+}
+
+nav .links {
+    padding-right: 15px;
+    float: right;
+    color: #838994;
+    font-size: 1.04rem;
+    margin-top: 25.3px;
+}
+
+nav .links li{
+    display: inline-block;
+    margin-left: 1.563rem;
+}
+
+.active {
+    color: #4c5058;
+    font-weight: 500;
+}
+
+nav .links li:hover {
+    cursor: pointer;
+    color: #333333;
+}
+
+
+/*Introduction Section*/
+
+.introduction {
+    background-image: url('../images/first-background-copy.jpg');
+    /*relative url: Absolute url is http... relative url goes one step up*/
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
+}
+
+.introduction h1,
+.introduction h3 {
+    color: #FFF;
+    text-align: center;
+    font-weight: 300;
+}
+
+.introduction h1 {
+    margin-top: 17.5rem;
+    font-size: 3.125rem;
+}
+
+.introduction h3 {
+    font-size: 24px;
+    margin-top: 1.25rem;
+    margin-size: 1.563rem;
+}
+
+
+/*Buttons*/
+
+.introduction .buttons {
+    color: #fff;
+    text-align: center;
+    margin-top: 1.563rem;
+}
+
+.buttons button {
+    width: 9.688rem;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    color: white;
+    font-size: 1.125rem;
+    cursor: pointer;
+    /*only defines this button*/
+}
+
+.introduction .half {
+    width: 49%;
+    padding: 0 0.938rem;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 1.125rem;
+    line-height: 1.2rem;
+}
+
+
+/*Three Case Images*/
+
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 5rem;
+    padding-left: 17rem;
+    /*these are to push the images closer together, similar to the original site.*/
+    padding-right: 17rem;
+}
+
+.cases .content {
+    margin-top: 7.875rem;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+
+.cases h2 {
+    font-size: 2.75rem;
+    margin: 1.625rem 0 3.125rem;
+    font-weight: 300;
+}
+
+.cases .devices > li {
+    width: 33.3%;
+    float: left;
+    height: 280px;
+}
+
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 1.563rem;
+    margin: 2.5rem 0px 1.875rem;
+    margin-top: 250px;
+}
+
+.devices img {
+    width: 127px;
+    height: 127px;
+}
+
+.cases .devices p {
+    font-weight: 300;
+    font-size: 1.313rem;
+}
+
+.devices li:first-child {
+    background-image: url('../images/icon-devices.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 127px 127px;
+}
+
+.devices li:nth-child(2) {
+    background-image: url('../images/icon-coffee.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 127px 127px;
+}
+
+.devices li:last-child {
+    background-image: url('../images/icon-refill.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 127px 127px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/*Footer*/
+
+.footer {
+    background-color: #fff;
+    overflow: auto;
+    padding-bottom: 9.375rem;
+    text-align: center;
+}
+
+.footer hr {
+    border: 0;
+    border-top: 1px solid #eaebec;
+    margin: 1.313rem 0;
+}
+
+.footer h5 {
+    padding-left: 43px;
+    /*Aligning with bottom icons*/
+}
+
+.icons > li {
+    border-radius: 1.25rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    margin: 1.26rem 5px;
+    border: 1px solid #eaebec;
+    padding: 0.625rem 0;
+}
+
+.footer .icons > li:hover {
+    cursor: pointer;
+}
+
+.footer .copy {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #838994;
+}
+
+#twitter {
+  color: #55acee;
+}
+#facebook {
+  color: #4c66a4;
+}
+#instagram {
+  color: #3f729b;
+}
+
+
+/*never use uppercase in html and css*/
+/*rem is equal to the computed value of font size*/
